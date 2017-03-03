@@ -1,0 +1,45 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="article.css">
+  <script>
+var txt    =  '{"articles":['+
+              '{"author":"V.K Menon","date":"2015-03-25","publication":"vikas"},'+
+              '{"author":"R.K Singh","date":"2010-08-11","publication":"Nirali"},'+
+              '{"author":"Durjoy Dutta","date":"2009-02-01","publication":"Narosa"},'+
+              '{"author":"C.Khanna","date":"2006-04-21","publication":"Chetna"},'+
+              '{"author":"Ravish Singh","date":"2013-07-15","publication":"Nirali"}]}';
+
+  var obj=JSON.parse(txt);
+
+
+  function startTime()
+    {
+      document.getElementById("date").innerHTML=Date();
+      setTimeout(startTime,1000);
+
+}
+  function my()
+  {
+
+       var random=Math.floor(Math.random() * obj.articles.length)
+
+       document.getElementById("demo").innerHTML = "Author : "
+    + obj.articles[random].author + "<br> " +"Date : "+ obj.articles[random].date + "<br>"+"Publicaton : "+ obj.articles[random].publication;
+  setTimeout(my, 1000);
+     }
+
+
+
+
+
+
+
+  </script>
+</head>
+<body onload="my();startTime()">
+<div>
+  <p id="date"></p>
+  <p id="demo" ></p>
+</div>
+</body>
+</html>

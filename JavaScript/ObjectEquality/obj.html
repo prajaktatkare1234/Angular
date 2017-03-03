@@ -1,0 +1,30 @@
+<html>
+<head>
+  <script>
+  function equality()
+  {
+    var obj1 {};
+    var obj2 {};
+    obj.name=document.getElementById("u1name").value;
+    obj.age=document.getElementById("u1age").value;
+    obj2.name=document.getElementById("u2name").value;
+    obj2.age=document.getElementById("u2age").value;
+    document.getElementById("demo").innerHTML=(obj1===obj2);
+  }
+  </script>
+</head>
+<body>
+<div id="1">
+User 1:<br>
+Name: <input type= "text" id="u1name"> <br>
+Age:  <input type="text" id="u1age"><br>
+</div>
+<div id="2">
+User 2:<br>
+Name: <input type= "text" id="u2name"> <br>
+Age:  <input type="text" id="u2age"><br>
+<div>
+  <input type="submit" value="submit" onsubmit="equality()">
+  <p id="demo"></p>
+</body>
+</html>

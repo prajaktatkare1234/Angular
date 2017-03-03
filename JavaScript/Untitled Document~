@@ -1,0 +1,20 @@
+<html>
+<head>
+</head>
+<body>
+<p id="demo"></p>
+<script>
+
+var person = {
+    firstName : "Arun",
+    lastName  : "Kapoor",
+    age       : 50,
+    eyeColor  : "black"
+};
+
+document.getElementById("demo").innerHTML =
+person.firstName + " is " + person.age + " years old and his eyes are "+person.eyeColor;
+</script>
+</body>
+</html>
+

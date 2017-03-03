@@ -1,0 +1,23 @@
+<html>
+<head>
+</head>
+<body>
+<!--<p id="person"></p>-->
+<p id="fullname"></p>
+<script>
+var person = {
+    firstName : "arun",
+    lastName  : "kumar",
+    age       : 50,
+    eyeColor  : "blue",
+    mobile    :8548578,
+	fullName:function(){ return this.firstName+ " "+ this.lastName;}
+};
+
+//document.getElementById("person").innerHTML =
+//person.firstName + " is " + person.age + " years old."+person.mobile;
+document.getElementById("fullname").innerHTML = person.fullname();
+</script>
+</body>
+</html>
+

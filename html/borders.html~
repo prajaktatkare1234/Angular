@@ -1,0 +1,16 @@
+<html>
+<head>
+<style>
+p{border:2px solid black;
+color:blue;
+margin:25px;
+text-align:center;
+background-color: yellow;
+}
+</style>
+<head>
+<body>
+<p>Some text </p>
+</body>
+</html>
+

@@ -1,0 +1,55 @@
+<html>
+<head>
+<style>
+/*div > p{color:pink;}
+img {width:30%;
+height:30%;
+opacity:0.5;}
+img:hover{
+opacity:1;}*/
+div.background{background:url(img_forest.jpg) repeat;	border:1px solid  grey; height:50%;width:50%}	
+div.transparentbox{border:2px solid black;color:blue; margin:30px; opacity:0.2}
+ul {
+margin:0px;
+width:200px;
+list-style:none;
+padding:0px
+background-color:grey;
+}
+li a{ display:block;
+      padding:8px 16px;	
+      color:blue;
+text-decoration:none;
+  }
+li a.active {
+    background-color: black;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: maroon;
+    color:white;	}																																								;}
+</style>
+</head>
+<body>
+<p>para</p>
+<div>
+<p>Welcome to bridgelaz solutions</p>
+<p>govandi</p>
+</div>
+<div class="background">
+
+<div class="transparentbox"><p>opacity</p></div>
+
+</div>
+<div class="navigators">
+<ul>
+<li><a href=#Home>Home</a></li>
+
+<li><a href=#About>About</li>
+
+<li><a href=#Contact>Contact</li>
+</ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<html>
+<body>
+  <p id="demo">
+  <button onclick="myfun()">click</button>
+<script>
+var students=["Aakash","Rohini","Shilpa","kiran"];
+function myfun()
+{
+  students.push("kunal");
+  students.unshift("Raj");
+  document.getElementById("demo").innerHTML=students;
+}
+</script>
+</body>
+</html>

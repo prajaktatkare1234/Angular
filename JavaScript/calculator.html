@@ -1,0 +1,80 @@
+<html>
+<head>
+<style>
+
+form{ margin:100px;
+   }
+      table{
+        background-color: grey;
+        height: auto;
+
+      }
+
+</style>
+</head>
+<body>
+<script>
+function calculator(num1,num2)
+{
+  var a=parseInt(num1);
+  var b=parseInt(num2);
+var e= document.getElementById("operation");
+var op=e.options[e.selectedIndex].value;
+
+var rs;
+if(op=="add")
+{
+   rs=a + b;
+}
+if( op=="sub")
+{
+  rs=a-b;
+
+}
+if(op=="mul")
+{
+  rs=a*b;
+
+}
+if(op=="div")
+{
+  rs=a/b;
+
+}
+document.getElementById("result").value= rs
+};
+
+
+</script>
+<form>
+<h3>CALCULATOR</h3>
+<table style="border:1px solid black;">
+
+<tr>
+<th>First Number :</th>
+<td><input type="text" name="first"></td>
+</tr>
+<tr>
+<th>Second Number :</th>
+<td><input type="text" name="second"></td>
+</tr>
+<tr>
+<td>
+<select id="operation">
+<option value="add">+</option>
+<option value="sub">-</option>
+<option value="mul">*</option>
+<option value="div">/</option>
+</select>
+</td>
+<td><input type="text" id="result"></td>
+</tr>
+<tr>
+<td colspan="2"><input type="button" value="submit"
+onclick="calculator(first.value,second.value)"></td></tr>
+</table>
+</form>
+<table>
+<td
+</body>
+</html>

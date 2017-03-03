@@ -1,0 +1,28 @@
+<html>
+<head>
+  <script>
+
+  var d= new Date();
+  var days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+  function my(date, month, year)
+  {
+      this.date = date;
+      this.month = month;
+      this.year = year;
+
+  }
+var m = new my(d.getDate(), d.getMonth(), d.getYear());
+m.nextd=function(){
+   d.setDate(this.date+1);
+//  return d.getDate();
+   document.write(days[d.getDay()]);
+
+};
+window.onload=m.nextd();
+//document.getElementById("demo").innerHTML=m.nextdate();
+</script >
+</head>
+<body>
+<p id"demo"></p>
+</body>
+</html>

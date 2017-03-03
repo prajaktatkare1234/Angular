@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="shop.js"></script>
+    <style>
+    div {
+      padding-left: 5px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      border:1px solid black;
+      width:20%;
+    background-color: powderblue;
+    }
+    </style>
+  </head>
+  <body>
+
+    <div>
+
+    Flavour:<input type="text" id="f"><br><br>
+    Quantity:<input type="text" id="q"><br><br>
+      <input type="button" value="push" onclick="add()">
+    </div>
+<br><br>
+      <input type="button" value="pop" onclick="remove()">
+    <br><br>
+ <input type="button" value="shift" onclick="sh()">
+    <br><br>
+    <div>
+      Flavour:<input type="text" id="unf"><br><br>
+      Quantity:<input type="text" id="unq"><br>
+      <br>
+      <input type="button" value="unshift" onclick="unsh()">
+    </div>
+      <br>
+      <br>
+<p id="demo1"></p>
+  </body>
+</html>

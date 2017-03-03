@@ -1,0 +1,24 @@
+<html>
+<body>
+  <p id="demo"></p>
+ <p id="f"></p>
+  <script>
+  function person(firstname,lastname,age,address)
+  {
+    this.firstname=firstname;
+    this.lastname= lastname;
+    this.age=age;
+    this.address=address;
+     this.nationality="Indian";
+  }
+  var father= new person("rishi","kapoor",68,"mumbai")
+  var mother= new person("neetu","kapoor",65,"pune")
+  person.prototype.mobile_no=43756398;
+  father.fullname= function(){
+    return this.firstname + " " + this.lastname;
+};
+  document.getElementById("demo").innerHTML= father.firstname + " " + mother.firstname + " " + father.nationality;
+  document.getElementById("f").innerHTML=father.fullname() + " " + father.mobile_no;
+  </script>
+</body>
+</html>

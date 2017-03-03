@@ -1,0 +1,54 @@
+<html>
+<head>
+<style>
+form{ margin:100px;}
+
+</style>
+</head>
+<body>
+<script>
+function calculator(num1,num2)
+{
+var e= document.getElementById("operation");
+var op=e.options[op.selectedIndex].value;
+document.write("hii");
+if(op=="add")
+{
+}
+
+};
+
+
+</script>
+<form>
+<h3>CALCULATOR</h3>
+<table style="border:1px solid black;">
+
+<tr>
+<th>First Number :</th>
+<td><input type="text" name="first"></td>
+</tr>
+<tr>
+<th>Second Number :</th>
+<td><input type="text" name="second"></td>
+</tr>  
+<tr>
+<td>        
+<select name="operation">
+<option value="add">+</option>
+<option value="sub">-</option>
+<option value="mul">*</option>
+<option value="div">/</option>
+</select>
+</td>
+<td><input type="text" name="result"></td>
+</tr>
+<tr>
+<td colspan="2"><input type="submit" value="submit" 
+onclick="calculator(first.value,second.value);"></td></tr>
+</table>
+</form>
+<table>
+<td
+</body>
+</html>
