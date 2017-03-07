@@ -1,9 +1,29 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script src="TextFile.js"></script>
-  </head>
-  <body onload="getText()">
-    <p id="demo"></p>
-  </body>
-</html>
+<body>
+
+
+
+<button type="button" onclick="getText()">Request data</button>
+
+
+<p id="demo"></p>
+
+<script>
+var t;
+function getText() {
+  var xhttp = new XMLHttpRequest();
+  xhttp.onreadystatechange=function() {
+    if (this.readyState == 4 && this.status == 200) {
+       t=this.responseText
+      document.getElementById("demo").innerHTML = t;
+      var x= t.split(" ");
+      console.log(x);
+
+    }
+  };
+  xhttp.open("GET", "abc.text" , true);
+  xhttp.send();
+
+}
+</script>
