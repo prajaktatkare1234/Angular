@@ -6,7 +6,7 @@ function get_text()
 return new Promise(function(resolve, reject) {
   var xhttp = new XMLHttpRequest();
 
- xhttp.open("GET","abc.text", true);
+xhttp.open("GET","abc.text", true);
 xhttp.onreadystatechange = function ()
   {
       if(xhttp.readyState === 4)
@@ -71,7 +71,7 @@ linkedlist.prototype.search = function(value)
     dt:value,next=null
   }
   temp=this.head;
-  
+
   while(temp.next!=null)
   {
     if(temp.dt==value)
@@ -156,16 +156,7 @@ function a()
 
 
         })
-    //   l.insert(0);
-    //   l.insert(5);
-     //
-     //
-    //   console.log(l.search("to"));
-    //   l.remove(0);
-     //
-     //
-    //  l.display();
-      //console.log(l);
+
 }
 function push()
 {
