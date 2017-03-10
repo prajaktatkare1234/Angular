@@ -1,29 +1,25 @@
 <!DOCTYPE html>
 <html>
-<body>
+  <head>
 
+  <script src="TextFile.js"></script>
 
-
-<button type="button" onclick="getText()">Request data</button>
-
-
+  </head>
+  <body>
+    <div>
+   <table>
+     <tr>
+   <input type="text" id="push" ></tr>
+     <tr> <th><input type="button" value="Add Text to Linkedlist" onclick="a()"></th></tr>
+     <tr> <th><input type="submit" value="add" onclick="push()"></th></tr>
+     <tr> <th> <input type="submit" value="remove" onclick="pop()"></th></tr>
+     <tr><th><input type="submit" value="search" onclick="s()"></th></tr>
+   <tr> <th> <input type="submit" value="Display" onclick="d()"></th></tr>
+</table>
+</div>
+<div>
 <p id="demo"></p>
-
-<script>
-var t;
-function getText() {
-  var xhttp = new XMLHttpRequest();
-  xhttp.onreadystatechange=function() {
-    if (this.readyState == 4 && this.status == 200) {
-       t=this.responseText
-      document.getElementById("demo").innerHTML = t;
-      var x= t.split(" ");
-      console.log(x);
-
-    }
-  };
-  xhttp.open("GET", "abc.text" , true);
-  xhttp.send();
-
-}
-</script>
+<p id="demo1"></p>
+</div>
+  </body>
+</html>
