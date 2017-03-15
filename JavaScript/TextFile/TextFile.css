@@ -1,9 +1,9 @@
 
 input {
-  background-color:black;
-  color:white;
+  background-color:#99b3ff;
+  color:black;
   display:inline-block;
-  padding: 15px 32px;
+  padding: 10px 25px;
   font-size: 16px;
   margin: 4px 2px;
 
@@ -11,20 +11,36 @@ input {
 }
 #push
 {
-  background-color:white;
+  background-color:#e6e6e6;
   color:black;
   display:block;
   padding: 10px 10px;
   font-size: 10px;
-  margin: 4px 2px;
+  margin: 4px 4px;
 }
 
 #d1{
+    background-color:#e6e6e6;
   padding: 15px 32px;
   font-size: 16px;
-  margin: 4px 2px;
+  margin: 4px 4px;
   border:1px solid black;
-  width:10%;
+  width:14%;
   height:10;
 
+}
+#d2{
+  margin:15%;
+  border:2px solid black;
+  width:50%;
+  background-color:#1e3d7b
+
+}
+body
+{
+  background-color:#bfbfbf;
+}
+h3
+{
+  text-align:center;
 }

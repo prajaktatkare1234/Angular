@@ -27,14 +27,6 @@ xhttp.onreadystatechange = function ()
 });
 }
 
-
-
-
-
-
-
-
-
  function linkedlist()
  {
       this.head= null;
@@ -47,6 +39,7 @@ linkedlist.prototype.insert= function(value)
       dt:value,
       next:null
     }
+
     if(this.head==null)
     {
       this.head= temp;
@@ -65,14 +58,13 @@ linkedlist.prototype.insert= function(value)
 
 linkedlist.prototype.search = function(value)
 {
- var c=false;
-  var temp
-  {
-    dt:value,next=null
-  }
+  // var temp
+  // {
+  //   dt:value,next=null
+  // }
   temp=this.head;
 
-  while(temp.next!=null)
+  while(temp.next!==null)
   {
     if(temp.dt==value)
     {
@@ -82,7 +74,7 @@ linkedlist.prototype.search = function(value)
     temp=temp.next;
 
   }
-
+if(!temp.next)
   alert(" not found");
 
 
@@ -113,6 +105,11 @@ linkedlist.prototype.remove = function(value)
  }
 
  follow.next=temp.next;
+ if(temp==this.head)
+ {
+   this.head= null;
+ }
+
 };
 
 linkedlist.prototype.display = function()
@@ -134,6 +131,7 @@ linkedlist.prototype.display = function()
     document.getElementById("demo1").innerHTML+=temp.dt + "<br>";
       temp=temp.next;
   }
+//alert(temp.dt);
   document.getElementById("demo1").innerHTML+=temp.dt;
 };
 var l = new linkedlist();
@@ -143,10 +141,12 @@ function a()
 
       get_text().then(function (data){
       console.log(data);
-      d= data;
+      reg=/\n/g;
+      d= data.replace(reg,'');
+
     //  document.getElementById("demo").innerHTML=d;
       var s=d.split(" ");
-
+        console.log(s);
       for(var i in s)
       {
         l.insert(s[i]);
