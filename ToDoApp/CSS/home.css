@@ -1,0 +1,17 @@
+#br1{
+  border:1px solid #d9d9d9;
+  margin-top: 70px;
+  border-radius: 10px;
+  background-color: #ffffe6;
+}
+#fb1,#wb1{
+  float:right;
+  display: block;
+
+}
+#n1{
+  width:100%;
+}
+body{
+  background-color: #00264d
+}
