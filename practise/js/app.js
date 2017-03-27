@@ -107,7 +107,7 @@ var router = {
     }
 };
 
-var spaRoutes = {
+var spaRoutes ={
 
     // Default route (home page)
     "#home": function(url) {
